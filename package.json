@@ -2,7 +2,7 @@
   "name": "porfolio-dev",
   "type": "module",
   "version": "0.0.1",
-  "homepage": "https://naiker12.io/Portfolio-Code/",
+  "homepage": "https://naiker12.github.io/Portfolio-Code/",
 
   "scripts": {
     "dev": "astro dev",

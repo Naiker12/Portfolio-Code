@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://naiker12.github.io/Portfolio-Code/sitemap-index.xml
+Sitemap: https://naiker12.github.io/sitemap-index.xml
