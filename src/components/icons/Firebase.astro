@@ -1,0 +1,39 @@
+<svg
+  {...Astro.props}
+  xmlns="http://www.w3.org/2000/svg"
+  width="256"
+  height="256"
+  preserveAspectRatio="xMidYMid"
+  viewBox="0 0 256 256"
+>
+  <defs>
+    <linearGradient id="firebase-a" x1="26.599%" x2="96.455%" y1="146.559%" y2="52.18%">
+      <stop offset="0%" stop-color="#A52714"></stop>
+      <stop offset="100%" stop-color="#FF6F00"></stop>
+    </linearGradient>
+    <linearGradient id="firebase-b" x1="12.16%" x2="96.455%" y1="19.445%" y2="52.18%">
+      <stop offset="0%" stop-color="#A52714"></stop>
+      <stop offset="72.521%" stop-color="#FF6F00"></stop>
+    </linearGradient>
+    <circle id="firebase-circle" cx="128" cy="128" r="128"></circle>
+  </defs>
+  <mask id="firebase-mask" fill="#fff">
+    <use xlink:href="#firebase-circle"></use>
+  </mask>
+  <g mask="url(#firebase-mask)">
+    <circle cx="128" cy="128" r="128" fill="#FFA000"></circle>
+    <path
+      fill="url(#firebase-a)"
+      d="M121.666 121.666 76.8 166.4l44.8-89.6z"
+    ></path>
+    <path
+      fill="url(#firebase-b)"
+      d="M179.2 166.4 153.6 51.2c-2.133-9.6-14.933-9.6-17.067 0L121.666 121.666 76.8 166.4l44.8 44.8c4.267 4.267 11.2 4.267 15.467 0l42.133-44.8z"
+    ></path>
+    <path
+      fill="#FFCA28"
+      d="M179.2 166.4 137.067 211.2c-4.267 4.267-11.2 4.267-15.467 0L76.8 166.4l44.866-44.8L153.6 51.2c2.134-9.6 14.934-9.6 17.067 0L179.2 166.4z"
+      fill-opacity="0.8"
+    ></path>
+  </g>
+</svg>

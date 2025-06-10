@@ -1,0 +1,35 @@
+<svg
+  {...Astro.props}
+  xmlns="http://www.w3.org/2000/svg"
+  width="256"
+  height="256"
+  preserveAspectRatio="xMidYMid"
+  viewBox="0 0 256 256"
+>
+  <defs>
+    <linearGradient id="supabase-a" x1="20.862%" x2="63.426%" y1="20.687%" y2="44.071%">
+      <stop offset="0%" stop-color="#249361"></stop>
+      <stop offset="100%" stop-color="#3ECF8E"></stop>
+    </linearGradient>
+    <linearGradient id="supabase-b" x1="1.991%" x2="21.403%" y1="-13.158%" y2="34.708%">
+      <stop offset="0%" stop-color="#249361"></stop>
+      <stop offset="100%" stop-color="#3ECF8E"></stop>
+    </linearGradient>
+    <circle id="supabase-circle" cx="128" cy="128" r="128"></circle>
+  </defs>
+  <mask id="supabase-mask" fill="#fff">
+    <use xlink:href="#supabase-circle"></use>
+  </mask>
+  <g mask="url(#supabase-mask)">
+    <circle cx="128" cy="128" r="128" fill="#3ECF8E"></circle>
+    <path
+      fill="url(#supabase-a)"
+      d="M149.602 258.579c-6.718 8.46-20.338 3.824-20.5-6.977L127.415 149H207.5c9.546 0 15.29-10.895 9.925-18.832L149.602 258.579Z"
+    ></path>
+    <path
+      fill="url(#supabase-b)"
+      d="M106.399-2.579c6.718-8.46 20.338-3.824 20.5 6.977L128.585 107H48.5c-9.546 0-15.29 10.895-9.925 18.832L106.399-2.579Z"
+      fill-opacity="0.2"
+    ></path>
+  </g>
+</svg>

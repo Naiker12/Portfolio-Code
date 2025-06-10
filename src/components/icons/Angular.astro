@@ -1,0 +1,38 @@
+<svg
+  {...Astro.props}
+  xmlns="http://www.w3.org/2000/svg"
+  width="256"
+  height="256"
+  preserveAspectRatio="xMidYMid"
+  viewBox="0 0 256 256"
+>
+  <defs>
+    <linearGradient id="angular-a" x1="0%" x2="100%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#E40035"></stop>
+      <stop offset="100%" stop-color="#F60A48"></stop>
+    </linearGradient>
+    <linearGradient id="angular-b" x1="0%" x2="100%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#C3002F"></stop>
+      <stop offset="100%" stop-color="#DE3F47"></stop>
+    </linearGradient>
+    <circle id="angular-circle" cx="128" cy="128" r="128"></circle>
+  </defs>
+  <mask id="angular-mask" fill="#fff">
+    <use xlink:href="#angular-circle"></use>
+  </mask>
+  <g mask="url(#angular-mask)">
+    <circle cx="128" cy="128" r="128" fill="#DD0031"></circle>
+    <path
+      fill="url(#angular-a)"
+      d="M128 32L42.666 74.666 55.466 192 128 224l72.534-32L213.334 74.666 128 32z"
+    ></path>
+    <path
+      fill="url(#angular-b)"
+      d="M128 32v192l72.534-32L213.334 74.666 128 32z"
+    ></path>
+    <path
+      fill="#FFF"
+      d="M128 74.666L96 160h16l6.4-19.2h23.2L148 160h16L128 74.666zm0 32L140.8 128h-25.6L128 106.666z"
+    ></path>
+  </g>
+</svg>

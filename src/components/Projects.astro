@@ -1,0 +1,178 @@
+---
+import GitHub from "./icons/GitHub.astro";
+import NextJS from "./icons/NextJS.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Css from "./icons/Css.astro";
+import Php from "./icons/Php.astro";
+import Mysql from "./icons/Mysql.astro";
+import Bootstrap from "./icons/Bootstrap.astro";
+import Ionic from "./icons/Ionic.astro";
+import Link from "./icons/Link.astro";
+import LinkButton from "./LinkButton.astro";
+import Supabase from "./icons/Supabase.astro";
+import Firabase from "./icons/Firebase.astro";
+import Javascript from "./icons/Javascript.astro";
+import Angular from "./icons/Angular.astro";
+
+const TAGS = {
+  NEXT: {
+    name: "Next.js",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-[#003159] text-white",
+    icon: Css,
+  },
+  PHP: {
+    name: "PHP",
+    class: "bg-[#003159] text-white",
+    icon: Php,
+  },
+  MYSQL: {
+    name: "MySQL",
+    class: "bg-[#003159] text-white",
+    icon: Mysql,
+  },
+  BOOTSTRAP: {
+    name: "Bootstrap",
+    class: "bg-[#003159] text-white", 
+    icon: Bootstrap,
+  },
+  IONIC: {
+    name: "Ionic",
+    class: "bg-[#003159] text-white", 
+    icon: Ionic,
+  },
+  SUPABASE: {
+    name: "Supabase",
+    class: "bg-[#003159] text-white",
+    icon: Supabase,
+  },
+  FIRABASE: {
+    name: "Firebase",
+    class: "bg-[#003159] text-white",
+    icon: Firabase,
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#003159] text-white",
+    icon: Javascript,
+  },
+  ANGULAR : {
+    name: "Angular",
+    class: "bg-[#003159] text-white",
+    icon: Angular,
+  }
+};
+const PROJECTS = [
+  {
+    title: "DragonBall - API",
+    description:
+      "DragonBallAPI es una API interactiva que permite a los desarrolladores acceder a información detallada sobre el universo de Dragon Ball. La plataforma proporciona datos actualizados sobre personajes, transformaciones, técnicas y más.",
+    link: "https://naiker12.github.io/dragolBall-ionic-angular-ionic-taller/dragol-ball",
+    github: "https://naiker12.github.io/dragolBall-ionic-angular-ionic-taller/dragol-ball",
+    image: "/projects/DragonBallAPI.png",
+    tags: [TAGS.IONIC , TAGS.ANGULAR , TAGS.FIRABASE , TAGS.CSS],
+  },
+  {
+    title: "Tienda Virtual - Plataforma de e-commerce completa",
+    description:
+      "Aplicación web de tienda virtual con gestión de productos, carrito de compras y panel de administración. Creado con PHP, MySQL , Bootstrap y Tailwind CSS.",
+    link: "https://youtu.be/TLxUqUDbMuE?si=IBUZeq2H69W61Gff",
+    github: "https://github.com/Naiker12/Tienda-virtual",
+    image: "/projects/Tienda-Virtual.png",
+    tags: [TAGS.PHP, TAGS.JAVASCRIPT,  TAGS.MYSQL, TAGS.BOOTSTRAP],
+  },
+  {
+    title: "Ionic Angular FakeStore - App de e-commerce móvil",
+    description:
+      "Aplicación móvil de e-commerce construida con Ionic, Angular y consumiendo la API de FakeStore. Incluye listado de productos, detalles, carrito de compras y autenticación básica. Ideal como ejemplo de tienda online adaptable a móviles.",
+    link: "https://youtu.be/92VdP308iJM?si=kfdNEZ22GXp67-Kz",
+    github: "https://github.com/Naiker12/ionic-angular-fakestore-ecommerce",
+    image: "/projects/Mercado-Express.png",
+    tags: [TAGS.IONIC, TAGS.ANGULAR, TAGS.FIRABASE , TAGS.TAILWIND],
+  },
+  {
+    title: "Call - Connect",
+    description:
+      "Aplicación de videollamadas desarrollada con Ionic Angular y Firebase.",
+    link: "",
+    github: "https://github.com/Naiker12/CallConnect-Ionic-Angular-",
+    image: "/projects/CallConnect.png",
+    tags: [TAGS.IONIC, TAGS.ANGULAR, TAGS.CSS,TAGS.FIRABASE, TAGS.SUPABASE],
+  },
+  {
+    title: "Galley",
+    description:
+      "Aplicación móvil para subir y gestionar fotos, desarrollada con Ionic Angular, Firebase y Supabase.",
+    link: "",
+    github: "https://github.com/Naiker12/Gallery",
+    image: "/projects/Gallery.png",
+    tags: [TAGS.IONIC, TAGS.ANGULAR, TAGS.CSS, TAGS.FIRABASE , TAGS.SUPABASE],
+  },
+];
+---
+
+<div class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+      <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+        <div class="w-full md:w-1/2">
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+            <img
+              alt="Recién llegado vs 5 años en Nueva Zelanda"
+              class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+              loading="lazy"
+              src={image}
+            />
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 md:max-w-lg">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+            {title}
+          </h3>
+          <div class="flex flex-wrap mt-2">
+            <ul class="flex flex-row mb-2 gap-x-2">
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                  >
+                    <tag.icon class="size-4" />
+                    {tag.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
+
+            <div class="mt-2 text-gray-700 dark:text-gray-400">
+              {description}
+            </div>
+            <footer class="flex items-end justify-start mt-4 gap-x-4">
+              {github && (
+                <LinkButton href={github}>
+                  <GitHub class="size-6" />
+                  Code
+                </LinkButton>
+              )}
+              {link && (
+                <LinkButton href={link}>
+                  <Link class="size-4" />
+                  Preview
+                </LinkButton>
+              )}
+            </footer>
+          </div>
+        </div>
+      </article>
+    ))
+  }
+</div>
