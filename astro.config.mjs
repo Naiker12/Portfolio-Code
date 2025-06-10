@@ -7,7 +7,7 @@ import robotsTxt from "astro-robots-txt"
 export default defineConfig({
   integrations: [tailwind(), robotsTxt()],
   site: 'https://naiker12.io',
-  site: 'https://porfolio.dev/',
-  base: '/porfolio.dev/', 
+  // site: 'https://porfolio.dev/',
+  base: '/Portfolio-Code/', 
   outDir: 'www',
 })
