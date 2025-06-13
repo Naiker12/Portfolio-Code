@@ -2,7 +2,6 @@
   "name": "porfolio-dev",
   "type": "module",
   "version": "0.0.1",
-
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -13,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "0.5.6",
     "@astrojs/tailwind": "5.1.0",
+    "@astrojs/vercel": "^8.1.5",
     "@fontsource-variable/onest": "5.0.2",
     "astro": "4.4.5",
     "astro-robots-txt": "1.0.0",
