@@ -5,5 +5,6 @@ import vercel from '@astrojs/vercel';
 
 export default defineConfig({
   integrations: [tailwind(), robotsTxt()],
+  site: 'https://porfolio.dev/',
   adapter: vercel(),                                               
 })
