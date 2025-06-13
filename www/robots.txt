@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://naiker12.github.io/sitemap-index.xml
